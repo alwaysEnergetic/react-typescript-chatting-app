@@ -1,0 +1,48 @@
+$ogd_blue: #3A84D0;
+
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+
+h1.header {
+  padding: 12px;
+  text-align: center;
+  text-decoration: underline;
+  font-size: larger;
+  font-weight: bold;
+}
+
+
+nav {
+
+  a {
+    text-decoration: none;
+    height: 64px;
+    color: $ogd_blue;
+    &:hover {
+      color: $ogd_blue;
+    }
+    &:active {
+      color: $ogd_blue;
+    }
+    &>div {
+      height: 100%;
+    }
+  }
+}
+
+.active {
+  > div {
+    background-color: $ogd_blue !important;
+    color: white !important;
+  }
+}
